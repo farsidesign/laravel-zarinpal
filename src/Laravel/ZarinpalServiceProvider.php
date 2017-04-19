@@ -1,25 +1,23 @@
 <?php
 
-namespace Zarinpal\Laravel;
+namespace Farsidesign\Laravel;
 
 use Illuminate\Support\ServiceProvider;
-use Zarinpal\Drivers\SoapDriver;
-use Zarinpal\Zarinpal;
+use Farsidesign\Zarinpal;
 
 class ZarinpalServiceProvider extends ServiceProvider
 {
     /**
      * Register the service provider.
      *
-     * @return \Zarinpal\Zarinpal
+     * @return \Farsidesign\Zarinpal
      */
     public function register()
     {
         $this->app->singleton('Zarinpal', function () {
             $merchantID = config('Zarinpal.merchantID', 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX');
-            $driver = new SoapDriver();
 
-            return new Zarinpal($merchantID, $driver);
+            return new Zarinpal($merchantID);
         });
 
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Zarinpal\Drivers;
+namespace Farsidesign\Drivers;
 
 interface DriverInterface
 {
