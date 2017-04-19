@@ -1,8 +1,8 @@
 <?php
 
-namespace Zarinpal;
+namespace Farsidesign;
 
-use Zarinpal\Drivers\NuSoapDriver;
+use Farsidesign\Drivers\NuSoapDriver;
 
 class Zarinpal
 {
