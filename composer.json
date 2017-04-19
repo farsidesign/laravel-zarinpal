@@ -1,0 +1,24 @@
+{
+    "name": "farsidesign/laravel-zarinpal",
+    "description": "Zarinpal Transaction Library for Laravel ",
+    "license": "GPL2",
+    "authors": [
+        {
+            "name": "Moslem Mobarakeh",
+            "email": "moslem@mobarakeh.info"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "classmap": [
+            "src/Drivers/lib/nusoap.php"
+        ],
+        "psr-4": {
+            "Farsidesign\\": "src/"
+        }
+    }
+}
